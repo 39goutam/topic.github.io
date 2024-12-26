@@ -1,7 +1,7 @@
 # topic.github.io
 ## Portfolio
 
-### Hello, I'm [Your Name] 👋
+### Hello, I'm Goutam K 👋
 
 I am passionate about technology and problem-solving. Here's a glimpse of my work:
 
