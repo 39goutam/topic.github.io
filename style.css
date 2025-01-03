@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap'); /* Replaced Lora with Playfair Display for a classic serif look */
+
+/* Global settings */
+body {
+    font-family: 'Roboto', sans-serif; /* Modern sans-serif font for body */
+    background: linear-gradient(135deg, #FDFCFB, #E2D1C3); /* Warm neutral gradient */
+    color: #2C3E50; /* Deep navy gray */
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Header styling with new animation */
+header {
+    font-family: 'Playfair Display', serif; /* Elegant serif font for header */
+    background-color: #2C3E50; /* Deep navy gray */
+    color: #FDFEFE; /* Off-white */
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeInDown 1s ease-out;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Navigation bar with vibrant colors */
+nav {
+    font-family: 'Roboto', sans-serif; 
+    background: linear-gradient(90deg, #E74C3C, #9B59B6); /* Red to purple gradient */
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.main-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.main-nav a {
+    font-family: 'Roboto', sans-serif;
+    color: #FDFEFE; /* Off-white */
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    font-weight: 600;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    background-color: #34495E; /* Dark navy blue */
+    color: #FFFFFF; /* White */
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Main content area */
+main {
+    flex: 1;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-content {
+    font-family: 'Playfair Display', serif; 
+    background: rgba(255, 255, 255, 0.8); /* Light white with transparency */
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    line-height: 1.8;
+    font-size: 1.1rem;
+    max-width: 800px;
+    text-align: center;
+    animation: popUp 1.2s ease-out;
+}
+
+@keyframes popUp {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Typewriter effect with updated styling */
+#typewriter {
+    font-family: 'Roboto', sans-serif; 
+    overflow: hidden;
+    border-right: 3px solid #8E44AD; /* Vibrant purple cursor */
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.1em;
+    animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #2C3E50; /* Deep navy gray */
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #8E44AD; /* Vibrant purple */
+    }
+}
