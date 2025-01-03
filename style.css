@@ -1,23 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap'); /* Replaced Lora with Playfair Display for a classic serif look */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
 
-/* Global settings */
 body {
-    font-family: 'Roboto', sans-serif; /* Modern sans-serif font for body */
-    background: linear-gradient(135deg, #FDFCFB, #E2D1C3); /* Warm neutral gradient */
-    color: #2C3E50; /* Deep navy gray */
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #E0EAFC, #CFDEF3);
+    color: #333;
     margin: 0;
     overflow-x: hidden;
 }
 
-/* Header styling with new animation */
 header {
-    font-family: 'Playfair Display', serif; /* Elegant serif font for header */
-    background-color: #2C3E50; /* Deep navy gray */
-    color: #FDFEFE; /* Off-white */
+    font-family: 'Playfair Display', serif;
+    background: linear-gradient(90deg, #6A11CB, #2575FC);
+    color: #FFFFFF;
     text-align: center;
     padding: 20px;
     margin-bottom: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
     animation: fadeInDown 1s ease-out;
 }
 
@@ -32,22 +31,12 @@ header {
     }
 }
 
-/* Navigation bar with vibrant colors */
 nav {
-    font-family: 'Roboto', sans-serif; 
-    background: linear-gradient(90deg, #E74C3C, #9B59B6); /* Red to purple gradient */
+    background: linear-gradient(90deg, #FF6B6B, #FFD93D);
     padding: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 1.5s ease-in;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
 .main-nav {
@@ -61,23 +50,23 @@ nav {
 
 .main-nav a {
     font-family: 'Roboto', sans-serif;
-    color: #FDFEFE; /* Off-white */
+    color: #FFFFFF;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 8px;
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     font-weight: 600;
+    background: rgba(0, 0, 0, 0.1);
 }
 
 .main-nav a:hover,
 .main-nav a.active {
-    background-color: #34495E; /* Dark navy blue */
-    color: #FFFFFF; /* White */
-    transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: #34495E;
+    color: #FFFFFF;
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Main content area */
 main {
     flex: 1;
     padding: 40px 20px;
@@ -88,13 +77,13 @@ main {
 }
 
 .inner-content {
-    font-family: 'Playfair Display', serif; 
-    background: rgba(255, 255, 255, 0.8); /* Light white with transparency */
+    font-family: 'Playfair Display', serif;
+    background: #FFFFFF;
     padding: 30px;
     border-radius: 16px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
     line-height: 1.8;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     max-width: 800px;
     text-align: center;
     animation: popUp 1.2s ease-out;
@@ -111,18 +100,17 @@ main {
     }
 }
 
-/* Typewriter effect with updated styling */
 #typewriter {
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Roboto', sans-serif;
     overflow: hidden;
-    border-right: 3px solid #8E44AD; /* Vibrant purple cursor */
+    border-right: 3px solid #6A11CB;
     white-space: nowrap;
     margin: 0 auto;
     letter-spacing: 0.1em;
     animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     font-weight: bold;
-    color: #2C3E50; /* Deep navy gray */
+    color: #2575FC;
 }
 
 @keyframes typing {
@@ -139,6 +127,6 @@ main {
         border-color: transparent;
     }
     50% {
-        border-color: #8E44AD; /* Vibrant purple */
+        border-color: #6A11CB;
     }
 }
