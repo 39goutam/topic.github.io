@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design and Analysis of Algorithms</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'VT323', monospace;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1, header h2 {
+            margin: 0;
+        }
+
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+        }
+
+        nav ul li a.active {
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        .content {
+            display: none;
+        }
+
+        .content.active {
+            display: block;
+        }
+
+        .block {
+            margin: 20px 0;
+        }
+
+        h3 {
+            color: #007BFF;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Design and Analysis of Algorithms</h1>
+            <h2>Learning Portfolio</h2>
+        </header>
+
+        <nav>
+            <ul class="main-nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#project">Project Intro</a></li>
+                <li><a href="#reflections">Reflections</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="home" class="content active">
+                <h2>Welcome to the Course!</h2>
+                <div class="inner-content">
+                    <div class="block">
+                        <h3>Course Info</h3>
+                        <p>This course explores the design and analysis of algorithms, covering fundamental data structures, algorithm efficiency, and real-world applications.</p>
+                    </div>
+                    <div class="block">
+                        <h3>Data Structures and Algorithms We Studied</h3>
+                        <ul>
+                            <li>Arrays, Linked Lists, Stacks, Queues</li>
+                            <li>Trees (Binary Search Trees, AVL Trees)</li>
+                            <li>Graphs (Representations, Traversals)</li>
+                            <li>Sorting Algorithms (Merge Sort, Quick Sort)</li>
+                            <li>Searching Algorithms (Binary Search)</li>
+                        </ul>
+                    </div>
+                    <div class="block">
+                        <h3>Real-Time Applications</h3>
+                        <p>These concepts are applied to real-world problems like optimizing warehouse management, network routing, and search engine indexing.</p>
+                    </div>
+                    <div class="block">
+                        <h3>References</h3>
+                        <ul>
+                            <li>Introduction to Algorithms (CLRS)</li>
+                            <li>Algorithms (Sedgewick & Wayne)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="project" class="content">
+                <h2>Project Introduction</h2>
+                <div class="inner-content">
+                    <div class="block">
+                        <h3>Project Overview</h3>
+                        <p id="typewriter"></p>
+                    </div>
+                    <div class="block">
+                        <h3>Business Case Study Identified</h3>
+                        <p>Optimizing warehouse operations for increased efficiency and reduced costs.</p>
+                    </div>
+                    <div class="block">
+                        <h3>Problem Definition</h3>
+                        <p>Design and implement algorithms for inventory management, order fulfillment, and route optimization within a warehouse environment.</p>
+                    </div>
+                    <div class="block">
+                        <h3>Team Member Details</h3>
+                        <ul>
+                            <li>Member 1: Vikas</li>
+                            <li>Member 2: Karthik</li>
+                            <li>Member 3: Abhishek</li>
+                            <li>Member 4: Goutam</li>
+                        </ul>
+                    </div>
+                    <div class="block">
+                        <h3>Assigned Business Cases (Members Working On)</h3>
+                        <ul>
+                            <li>Member 1: Inventory Tracking</li>
+                            <li>Member 2: Order Picking Optimization</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="reflections" class="content">
+                <h2>Course Learning Reflections</h2>
+                <div class="inner-content">
+                    <div class="block">
+                        <p><b>What are the types of problems we see in nature?</b><br>
+                            In computational problem solving, we encounter different types of problems that mimic patterns observed in nature... (truncated for brevity)
+                        </p>
+                    </div>
+                    <div class="block">
+                        <p><b>Space and Time Efficiency:</b><br>
+                            Space and time efficiency measure how well an algorithm uses computational resources... (truncated for brevity)
+<br>
+1. <b>Efficiency and Trade-offs:</b> Selecting an efficient approach requires balancing constraints, considering factors like time, space, and implementation complexity. For example, I’d prefer Quick Sort for general use but use Merge Sort for stability.
+<br>
+2. <b>Balancing Constraints:</b> In constrained designs, such as hashing, trade-offs between collision resolution techniques guide design decisions.
+<br>
+3. <b>Simplicity vs. Optimization:</b> In cases where resources are scarce, simplicity usually wins over optimization. For example, using an iterative solution for factorial when recursion may cause stack overflow.
+<br>
+4. <b>Divide and Conquer:</b> Breaking down a problem into smaller parts makes the design easier. Dynamic programming is a good example of this with its overlapping subproblems.
+<br>
+5. <b>Overcoming Weaknesses:</b> Identifying bottlenecks, such as hash collisions or unbalanced trees, leads to adaptive solutions like AVL or Red-Black Trees.
+<br>
+6. <b>Cross-context Knowledge:</b> Known solutions to new domains can be applied to demonstrate the strength of adaptive techniques, such as graph algorithms in bioinformatics or social network analysis.
+<br>
+7. <b>Patterns in Complexity:</b> Patterns in datasets simplify the application of algorithms and aid decisions like hashing vs. search trees.
+<br>
+8. **Innovation vs. Tradition:</b> Situations that require fast deployment might rely on proven solutions, while unique challenges can lead to innovation.
+<br>
+9. <b>Efficacy of Solutions:</b> Evaluation of solutions also takes into account parameters such as speed of execution, memory usage, and adaptability. For example, the efficiency of a solution is increased if it is capable of adapting in response to unanticipated increases in data volume.
+<br>
+10. <b>Adaptability of Solutions:</b> Tackling unforeseen problems often requires modification or improvement of existing algorithms. For example, changing a graph traversal algorithm to include weighted edges ensures robustness in changing scenarios.
+<br>
+11. <b>Pattern Recognition:</b> Techniques such as looking at data structures for their inherent properties or recognizing patterns of recurring subproblems help in choosing efficient algorithms.
+<br>
+12. <b>Design Innovation:</b> Whether one should innovate would depend on the cost of development versus potential benefits. Solutions that have been tried and tested are often good enough for traditional problems, but innovative designs are necessary in novel or very high-impact problems.
+<br>
+These principles capture the nature of iterative and incremental problem-solving, thus encouraging effective and innovative solutions.
+
+
+                       </p>
+                    </div>
+                    <!-- Additional Reflections Content Goes Here -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        const navLinks = document.querySelectorAll('.main-nav a');
+        const contentSections = document.querySelectorAll('.content');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href').substring(1);
+
+                // Remove active class from all content sections
+                contentSections.forEach(section => {
+                    section.classList.remove('active');
+                });
+
+                // Add active class to the target section
+                document.getElementById(targetId).classList.add('active');
+
+                // Update active link styling
+                navLinks.forEach(navLink => navLink.classList.remove('active'));
+                link.classList.add('active');
+
+                // Trigger typewriter effect ONLY if the project section is now active
+                if (targetId === 'project') {
+                    triggerTypewriter();
+                }
+            });
+        });
+
+        // Typewriter effect
+        const text = "This project focuses on designing and implementing a Warehouse Management System (WMS)...";
+        const typewriterElement = document.getElementById('typewriter');
+        let i = 0;
+        let typewriterRunning = false;
+
+        function typeWriter() {
+            if (i < text.length) {
+                typewriterElement.innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, 50);
+            } else {
+                typewriterRunning = false;
+            }
+        }
+
+        function triggerTypewriter() {
+            if (!typewriterRunning) {
+                typewriterElement.innerHTML = "";
+                i = 0;
+                typewriterRunning = true;
+                typeWriter();
+            }
+        }
+
+        // Set the home page and active link on initial load
+        document.getElementById('home').classList.add('active');
+        navLinks[0].classList.add('active');
+    </script>
+</body>
+</html>
