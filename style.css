@@ -1,22 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap');
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background: linear-gradient(135deg, #E0EAFC, #CFDEF3);
-    color: #333;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e1e1e, #4b4b4b);
+    color: #fff;
     margin: 0;
     overflow-x: hidden;
 }
 
 header {
-    font-family: 'Playfair Display', serif;
-    background: linear-gradient(90deg, #6A11CB, #2575FC);
-    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    background: #3a3a3a;
+    color: #fff;
     text-align: center;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
+    padding: 50px;
+    margin-bottom: 40px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
     animation: fadeInDown 1s ease-out;
 }
 
@@ -32,11 +32,11 @@ header {
 }
 
 nav {
-    background: linear-gradient(90deg, #FF6B6B, #FFD93D);
-    padding: 10px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    background: #FF5722;
+    padding: 14px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     border-radius: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .main-nav {
@@ -45,31 +45,31 @@ nav {
     margin: 0;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 .main-nav a {
-    font-family: 'Roboto', sans-serif;
-    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
     text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 8px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 14px 30px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
     font-weight: 600;
-    background: rgba(0, 0, 0, 0.1);
+    background: #333;
 }
 
 .main-nav a:hover,
 .main-nav a.active {
-    background-color: #34495E;
-    color: #FFFFFF;
+    background-color: #E91E63;
+    color: #fff;
     transform: scale(1.1);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
 }
 
 main {
     flex: 1;
-    padding: 40px 20px;
+    padding: 50px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,14 +77,15 @@ main {
 }
 
 .inner-content {
-    font-family: 'Playfair Display', serif;
-    background: #FFFFFF;
-    padding: 30px;
+    font-family: 'Roboto', sans-serif;
+    background: #333;
+    padding: 40px;
     border-radius: 16px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
     line-height: 1.8;
-    font-size: 1.2rem;
-    max-width: 800px;
+    font-size: 1.3rem;
+    color: #fff;
+    max-width: 900px;
     text-align: center;
     animation: popUp 1.2s ease-out;
 }
@@ -103,14 +104,14 @@ main {
 #typewriter {
     font-family: 'Roboto', sans-serif;
     overflow: hidden;
-    border-right: 3px solid #6A11CB;
+    border-right: 3px solid #FF5722;
     white-space: nowrap;
     margin: 0 auto;
     letter-spacing: 0.1em;
     animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #2575FC;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #E91E63;
 }
 
 @keyframes typing {
@@ -127,6 +128,6 @@ main {
         border-color: transparent;
     }
     50% {
-        border-color: #6A11CB;
+        border-color: #FF5722;
     }
 }
