@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Team Members</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome for GitHub icon -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet"> <!-- Playfair Display Font -->
+    <style>
+        body {
+            font-family: 'Playfair Display', serif;
+            margin: 0;
+            padding: 0;
+            color: #0B2545;
+            background-color: #EEF4ED;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #134074;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 2em 0;
+        }
+
+        .block {
+            background: #13315C;
+            color: white;
+            padding: 1.5em;
+            margin: 1em 0;
+            border-radius: 8px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .block:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .block h3 {
+            margin: 0;
+        }
+
+        .popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+        }
+
+        .popup-content {
+            background: #8DA9C4;
+            padding: 2em;
+            border-radius: 8px;
+            width: 80%;
+            max-width: 800px;
+            text-align: center;
+            position: relative;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        .popup-content h3 {
+            color: #134074;
+            margin-bottom: 1em;
+        }
+
+        .popup-content p {
+            color: #0B2545;
+        }
+
+        .popup-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 1.5em;
+            color: #0B2545;
+            cursor: pointer;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .team-list a {
+            color: #13315C;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            margin: 0.5em 1em;
+            font-size: 1.2em;
+            transition: color 0.3s ease, text-shadow 0.3s ease;
+        }
+
+        .team-list a:hover {
+            color: #8DA9C4;
+            text-shadow: 0 0 8px #8DA9C4;
+        }
+
+        .team-list a i {
+            margin-center: 8px;
+            font-size: 1.5em;
+            color: black; /* Set the GitHub icon color to black */
+            transition: transform 0.3s ease;
+        }
+
+        .team-list a:hover i {
+            transform: rotate(360deg);
+        }
+
+        .assigned-work {
+            background-color: #EEF4ED;
+            padding: 1em;
+            margin: 1em 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            cursor: pointer;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .assigned-work-details {
+            display: none;
+            background-color: #134074;
+            color: white;
+            padding: 1em;
+            margin-top: 1em;
+            border-radius: 8px;
+            transition: max-height 0.3s ease;
+            max-height: 0;
+            overflow: hidden;
+        }
+
+        .assigned-work.open .assigned-work-details {
+            display: block;
+            max-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Course Team Members</h1>
+
+    <section class="container">
+        <h2>Details of Members</h2>
+        <div class="block"><a href="https://tinyurl.com/bubejece" target="_blank">Abhishek Details</a></div>
+        <div class="block" ><a href="https://vikas-u-badiger.github.io/Vikas_portfolio.github.io/" target="_blank">Vikas Details</a></div>
+        <div class="block"><a href="https://chikkamathkartik.github.io/myportfolio/" target="_blank">Karthik Details</a></div>
+        <div class="block" ><a href="https://39goutam.github.io/topic.github.io/" target="_blank">Goutam Details</a></div>
+
+        <h2>Team Members</h2>
+        <div class="team-list">
+            <a href="https://github.com/Abhishek-M-2004"><i class="fab fa-github"></i>1.Abhishek </a>
+            <a href="https://github.com/Vikas-U-Badiger"><i class="fab fa-github"></i>2. Vikas</a>
+            <a href="https://github.com/chikkamathkartik"><i class="fab fa-github"></i>3. Karthik</a>
+            <a href="https://github.com/39goutam"><i class="fab fa-github"></i>4. Goutam</a>
+        </div>
+
+        <h2>Assigned Works</h2>
+        <div class="assigned-work" onclick="toggleWorkDetails('work1')">
+            <h3>Abhishek Work Details</h3>
+            <div class="assigned-work-details" id="work1-details"><h4>Business cases assigned </h4>
+                <p>1.Rising Demand:Rising Demand in the smart cities requires it to predict the stock of that item efficiently so that user is satisfied.
+<br>
+2.Space Constraints:Since Limited space is there in urban areas so we also need a space efficient warehouse which can adjust the items according to the area of the space available</p>
+<h4>Functionality assigned </h4>
+<p>1.Listing all the items in the warehouse:
+List the items in the warehouse according to their priority
+<br>
+2.Searching the required item in the warehouse:
+Search the required item in the warehouse by entering the keywords of the item
+</p>
+            </div>
+        </div>
+        <div class="assigned-work" onclick="toggleWorkDetails('work2')">
+            <h3>Vikas Work Details</h3>
+            <div class="assigned-work-details" id="work2-details"><h4>Business cases assigned </h4>
+                <p>1.Inefficient Routes:The routes required to travel from one warehouse to another should be the shortest route such that the fuel is saved and therefore the cost is also reduced.
+<br>2.Improper Identification of vehicles and parcel boxes:The Trucks and vehicles entering the warehouse should be verified with number plate and driver_ID in the system once, then they should be allowed the entry in the warehouse. After entry in the warehouse the parcel_id should be verified.
+</p>
+<h4>Functionality assigned </h4>
+<p>1.Minimizing the costs of travelling:
+Minimize the cost of travelling from one warehouse to another
+<br>
+2.Vehicle Data Management:
+Manage the data of vehicles by verifying the entry and exit of the vehicles
+</p>
+            </div>
+        </div>
+        <div class="assigned-work" onclick="toggleWorkDetails('work3')">
+            <h3>Karthik Work Details</h3><h4>Business cases assigned </h4>
+            <div class="assigned-work-details" id="work3-details">
+                <p>1.Improper identification of workers:The workers of the warehouse should be assigned with the worker_ID so that their identity can be verified by the WMS on daily basis
+</p>
+<h4>Functionality assigned </h4>
+<p>1.Worker Data Management:
+Sorting the worker data according to their position.
+</p>
+<p>Worked on Project Portfolio with Goutam</p>
+            </div>
+        </div>
+        <div class="assigned-work" onclick="toggleWorkDetails('work4')">
+            <h3>Goutam Work Details</h3>
+            <div class="assigned-work-details" id="work4-details">
+                <p>1.Maintaining Budget of the warehouse:Ensuring that the workers are paid their salaries on time and also the costing of the warehouse is accurate.
+</p>
+<h4>Functionality assigned </h4>
+<p>1.Budget Management:
+Managing the budget and expenditure of the warehouse so that the warehouse does not fall in loss
+</p>
+<p>Worked on Project Portfolio with Karthik</p>
+            </div>
+        </div>
+    </section>
+    <script>
+        function openPopup(member) {
+            document.getElementById('popup-' + member).style.display = 'flex';
+        }
+
+        function closePopup(member) {
+            document.getElementById('popup-' + member).style.display = 'none';
+        }
+
+        function toggleWorkDetails(workId) {
+            const workElement = document.getElementById(workId + '-details').parentElement;
+            workElement.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
